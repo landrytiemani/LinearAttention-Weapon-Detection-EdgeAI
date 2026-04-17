@@ -1,0 +1,84 @@
+cff-version: 1.2.0
+title: "EfficientViT-YOLOv8: Linear-attention vision transformer backbone for enhanced weapon detection in edge video surveillance"
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+authors:
+  - family-names: Tiemani
+    given-names: Landry
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # add when available
+  - family-names: Berardini
+    given-names: Daniele
+  - family-names: Bellur
+    given-names: Srikar
+repository-code: "https://github.com/landrytiemani/LinearAttention-Weapon-Detection-EdgeAI"
+url: "https://github.com/landrytiemani/LinearAttention-Weapon-Detection-EdgeAI"
+abstract: >-
+  EfficientViT-YOLOv8 is a hybrid object detector in which the CSPDarknet53
+  backbone of YOLOv8-small is replaced by the EfficientViT-B1 backbone, which
+  exploits a Lightweight Multi-Scale Linear Attention (LiteMLA) mechanism
+  providing O(n) global context. Evaluated on the WeaponSenseV2 dataset using
+  a video-level split, the proposed model achieves 61.6% AP50, surpassing the
+  published YOLOv8-extra-large detector by +2.7 AP50 and the SR-augmented
+  YOLOv8-medium baseline by +1.6 AP50, while requiring only 12.5M parameters
+  and 28.0 GFLOPs at 640x640 inference.
+keywords:
+  - weapon detection
+  - vision transformer
+  - linear attention
+  - EfficientViT
+  - YOLOv8
+  - edge AI
+  - video surveillance
+  - object detection
+license: MIT
+version: 0.1.0
+date-released: "2026-04-16"
+
+preferred-citation:
+  type: article
+  title: "Linear-attention vision transformer backbone for enhanced weapon detection in edge video surveillance"
+  authors:
+    - family-names: Tiemani
+      given-names: Landry
+    - family-names: Berardini
+      given-names: Daniele
+    - family-names: Bellur
+      given-names: Srikar
+  year: 2026
+  notes: "Manuscript in preparation"
+
+references:
+  - type: article
+    title: "EfficientViT: Lightweight Multi-Scale Attention for High-Resolution Dense Prediction"
+    authors:
+      - family-names: Cai
+        given-names: Han
+      - family-names: Li
+        given-names: Junyan
+      - family-names: Hu
+        given-names: Muyan
+      - family-names: Gan
+        given-names: Chuang
+      - family-names: Han
+        given-names: Song
+    conference:
+      name: "IEEE/CVF International Conference on Computer Vision (ICCV)"
+    year: 2023
+    start: 17302
+    end: 17313
+  - type: article
+    title: "Edge artificial intelligence and super-resolution for enhanced weapon detection in video surveillance"
+    authors:
+      - family-names: Berardini
+        given-names: Daniele
+      - family-names: Migliorelli
+        given-names: Lucia
+      - family-names: Galdelli
+        given-names: Alessandro
+      - family-names: "Mar\xEDn-Jim\xE9nez"
+        given-names: "Manuel J."
+    journal: "Engineering Applications of Artificial Intelligence"
+    volume: 140
+    start: 109684
+    year: 2025
+    doi: "10.1016/j.engappai.2024.109684"

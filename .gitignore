@@ -1,0 +1,91 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Data, copyrighted PDFs, transient artefacts
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Dataset payload (large, license-restricted, distributed separately).
+# We deliberately KEEP the directory structure tracked so that anyone
+# reproducing the experiments knows exactly where to drop the dataset.
+# Block all actual image / label files but whitelist the structural files
+# (.gitkeep, README, data.yaml).
+data/**/*.jpg
+data/**/*.jpeg
+data/**/*.png
+data/**/*.bmp
+data/**/*.tif
+data/**/*.tiff
+data/**/*.webp
+data/**/*.txt
+data/**/*.cache
+!data/**/.gitkeep
+!data/**/README.md
+!data/**/data.yaml
+
+# State-of-the-art reference papers (copyrighted, not redistributable)
+SoTA/
+
+# Manuscript (kept locally, distributed via journal/preprint server)
+paper/
+
+# Ultralytics scratch directory
+runs/
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Training byproducts — keep best.pt only (tracked via LFS)
+# ─────────────────────────────────────────────────────────────────────────────
+results/*/weights/*.pt
+!results/*/weights/best.pt
+results/*/train_batch*.jpg
+results/*/val_batch*.jpg
+
+# Top-level pretrained checkpoints downloaded by Ultralytics
+yolov8n.pt
+yolov8s.pt
+yolov8m.pt
+yolov8l.pt
+yolov8x.pt
+*.engine
+*.onnx
+*.torchscript
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Python
+# ─────────────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Editor / OS / tooling
+# ─────────────────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude Code session artefacts
+.claude/
+**/.claude/
+
+# OneDrive metadata
+*:Zone.Identifier
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# LaTeX intermediate files (anywhere — kept here for completeness)
+*.aux
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk

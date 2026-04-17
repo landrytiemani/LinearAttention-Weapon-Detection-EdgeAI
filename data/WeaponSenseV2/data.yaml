@@ -1,0 +1,26 @@
+# WeaponSenseV2 — Ultralytics YOLO dataset configuration.
+#
+# `path` is interpreted relative to the dataset root by Ultralytics.
+# When running training from an arbitrary working directory, the
+# Ultralytics YOLO loader resolves split paths as:
+#     <path>/<train|val|test>
+# so the layout below assumes that the WeaponSenseV2 frames are placed
+# under data/WeaponSenseV2/{train,val,test}/{images,labels}/ from the
+# project root.
+#
+# If you keep the dataset elsewhere (e.g., on a fast NVMe drive),
+# either symlink it into data/WeaponSenseV2/ or override `path` below
+# to an absolute path.
+
+path: ./data/WeaponSenseV2     # dataset root (relative to project root)
+train: train/images
+val:   val/images
+test:  test/images
+
+# Number of classes
+nc: 2
+
+# Class names (must match the integer class IDs in the .txt labels)
+names:
+  0: Handgun
+  1: Knife

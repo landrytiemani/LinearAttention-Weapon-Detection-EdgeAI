@@ -1,0 +1,115 @@
+{
+  "sota": {
+    "YOLOv8n (paper)": {
+      "AP50_handgun": 65.6,
+      "AP50_knife": 21.9,
+      "AP50_all": 43.7,
+      "Prec_all": 66.3,
+      "Rec_all": 37.4,
+      "Params_M": 3.01,
+      "GFLOPs": 8.1,
+      "FPS_jetson": 21.7
+    },
+    "YOLOv8s (paper)": {
+      "AP50_handgun": 66.9,
+      "AP50_knife": 21.3,
+      "AP50_all": 44.1,
+      "Prec_all": 55.7,
+      "Rec_all": 40.1,
+      "Params_M": 11.13,
+      "GFLOPs": 28.4,
+      "FPS_jetson": 9.9
+    },
+    "YOLOv8m (paper)": {
+      "AP50_handgun": 73.2,
+      "AP50_knife": 29.1,
+      "AP50_all": 51.2,
+      "Prec_all": 45.7,
+      "Rec_all": 49.7,
+      "Params_M": 25.86,
+      "GFLOPs": 79.1,
+      "FPS_jetson": 4.4
+    },
+    "YOLOv8l (paper)": {
+      "AP50_handgun": 74.6,
+      "AP50_knife": 41.1,
+      "AP50_all": 57.8,
+      "Prec_all": 68.8,
+      "Rec_all": 50.7,
+      "Params_M": 43.63,
+      "GFLOPs": 165.4,
+      "FPS_jetson": 2.5
+    },
+    "YOLOv8xl (paper)": {
+      "AP50_handgun": 78.0,
+      "AP50_knife": 39.8,
+      "AP50_all": 58.9,
+      "Prec_all": 73.2,
+      "Rec_all": 51.2,
+      "Params_M": 68.23,
+      "GFLOPs": 257.4,
+      "FPS_jetson": 1.6
+    },
+    "YOLOSR (paper)": {
+      "AP50_handgun": 66.0,
+      "AP50_knife": 44.2,
+      "AP50_all": 55.1,
+      "Prec_all": null,
+      "Rec_all": null,
+      "Params_M": null,
+      "GFLOPs": 28.8,
+      "FPS_jetson": null
+    },
+    "YOLOv8mSR (paper)": {
+      "AP50_handgun": 74.0,
+      "AP50_knife": 46.0,
+      "AP50_all": 60.0,
+      "Prec_all": null,
+      "Rec_all": null,
+      "Params_M": null,
+      "GFLOPs": 79.1,
+      "FPS_jetson": null
+    }
+  },
+  "ours": {
+    "YOLOv8s (ours)": {
+      "AP50_handgun": 49.24371245409942,
+      "AP50_knife": 48.003136514508526,
+      "AP50_all": 48.623424484303975,
+      "AP50_95_all": 19.14204101726074,
+      "Prec_all": 47.01886540155045,
+      "Rec_all": 62.50801125839081,
+      "F1_all": 53.6682110821447,
+      "Params_M": 11.126358,
+      "GFLOPs": 27.87101184,
+      "FPS": 181.77017185467437,
+      "ms_per_img": 5.501452684984542
+    },
+    "YOLOv8m (ours)": {
+      "AP50_handgun": 64.44790465145245,
+      "AP50_knife": 53.85555978871272,
+      "AP50_all": 59.151732220082586,
+      "AP50_95_all": 23.80098832569246,
+      "Prec_all": 58.79652421345825,
+      "Rec_all": 58.89604783027632,
+      "F1_all": 58.84624394210757,
+      "Params_M": 25.840918,
+      "GFLOPs": 77.118053376,
+      "FPS": 142.3697444092185,
+      "ms_per_img": 7.023964285035618
+    },
+    "EfficientViT-YOLOv8 (ours)": {
+      "AP50_handgun": 65.79383068934743,
+      "AP50_knife": 57.435461984530754,
+      "AP50_all": 61.614646336939096,
+      "AP50_95_all": 21.838501095075678,
+      "Prec_all": 64.61954834484118,
+      "Rec_all": 61.12423953980797,
+      "F1_all": 62.82331427151908,
+      "Params_M": 12.50719,
+      "GFLOPs": 27.346772992,
+      "FPS": 77.38422840853302,
+      "ms_per_img": 12.922529830248095
+    }
+  }
+}
